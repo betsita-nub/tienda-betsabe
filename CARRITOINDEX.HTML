@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rincón de Moda - Catálogo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fcfcfc;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+      
+        .precio {
+            font-size: 1.3rem;
+            color: #e91e63; /* Color rosa moda */
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+/* CARRITO */
+#carrito {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 260px;
+    height: 100%;
+    background: white;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    overflow-y: auto;
+<div class="menu">
+<button onclick="mostrar('Mesas')">Mesas</button>
+<button onclick="mostrar('Sillas')">Sillas</button>
+<button onclick="mostrar('Manteleria')">Manteleria</button>
+<button onclick="mostrar('Moños')">Moños</button>
+<button onclick="mostrar('Cubres')">Cubres</button>
+<button onclick="mostrar('Carpas')">Carpas</button>
+<button onclick="mostrar('Lonas')">Lonas</button>
+<button onclick="mostrar('Inflables')">Inflables</button>
+<button onclick="mostrar('Banos')">Baños</button>
+
+<button onclick="toggleSub()">Cristaleria ▾</button>
+<div id="sub" class="submenu">
+<button onclick="mostrar('Copas')">Copas</button>
+<button onclick="mostrar('PlatoC')">Platos</button>
+<button onclick="mostrar('Tazon')">Tazones</button>
+<button onclick="mostrar('Jarron')">Jarrones</button>
+<button onclick="mostrar('Soperas')">Soperas</button>
+<button onclick="mostrar('Vasos')">Vasos</button>
+</div>
+</div>
+
+}
+  <script>
+
+/* NUEVO */
+const fondos = {
+    sabritas: "#87CEEB",
+    paletas: "#FFD700",
+    pan: "#FFB6C1",
+    galletas: "#DDA0DD",
+    papel: "#98FB98",
+    refrescos: "#F4A460",
+    jugos: "#20B2AA",
+    cerveza: "#FF69B4",
+    verdura: "#C0C0C0",
+    garrafon de agua: "#E6E6FA",
+    cerillos: "#FFFACD",
+    casuelas: "#FA8072",
+    bolis: "#AFEEEE",
+    jabon: "#DEB887",
+    suavitel: "#B0E0E6"
+};
+
+
+</style>
+</head>
+  
+ <body>
+
+<!-- CARRITO -->
+<div id="carrito">
+    <h2>🛒 Carrito</h2>
+    <p><strong>Cliente:</strong> <span id="clienteNombre">Invitado</span></p>
+    <ul id="listaCarrito"></ul>
+
+
+</div>
+</body>
+</html>
