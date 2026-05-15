@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rincón de Moda - Catálogo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fcfcfc;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Contenedor principal para las fotos */
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Tarjeta de producto */
+        .producto {
+            background-color: white;
+            border-radius: 15px;
+            width: 250px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .producto:hover {
+            transform: scale(1.03);
+        }
+
+        /* Espacio para la foto */
+        .producto img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+        }
+
+        .nombre {
+            font-size: 1.1rem;
+            color: #444;
+            margin: 15px 0 5px 0;
+            font-weight: 500;
+        }
+
+        .precio {
+            font-size: 1.3rem;
+            color: #e91e63; /* Color rosa moda */
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h1>PRODUCTOS</h1>
+
+    <div class="galeria">
+        
+        <!-- Producto 1 -->
+        <div class="producto">
+            <img src="IMG20260413125715.jpg" alt="Producto 1">
+            <h3>suavitel</h3>
+  <p>Precio: $30.00</p>
+  <button onclick="agregarAlCarrito('Zapato', 50)">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="producto">
+            <img src="IMG20260413125712.jpg" alt="Producto 2">
+            <h3>suavitel</h3>
+  <p>Precio: $30.00</p>
+  <button onclick="agregarAlCarrito('Zapato', 50)">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto">
+            <img src="IMG20260413125704.jpg" alt="Producto 3">
+            <h3>suavitel</h3>
+  <p>Precio: $30.00</p>
+  <button onclick="agregarAlCarrito('Zapato', 50)">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto">
+            <img src="IMG20260413125449.jpg" alt="Producto 4">
+            <h3>suavitel</h3>
+  <p>Precio: $30.00</p>
+  <button onclick="agregarAlCarrito('Zapato', 50)">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="producto">
+            <img src="IMG20260413125528.jpg">
+<h3>suavitel</h3>
+  <p>Precio: $30.00</p>
+  <button onclick="agregarAlCarrito('Zapato', 50)">Añadir al carrito</button>
+            
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="producto">
+            <img src="IMG20260413125520.jpg" alt="Producto 6">
+     <h3>suavitel</h3>
+  <p>Precio: $30.00</p>
+  <button onclick="agregarAlCarrito('Zapato', 50)">Añadir al carrito</button>
+
+</div>
+
+</body>
+</html>
