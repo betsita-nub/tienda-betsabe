@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Abarrotes Lupita - Tienda</title>
+    <style>
+        body {
+            background-color: #800000; /* Color Vino */
+            color: white;
+            font-family: 'Arial Black', sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 { margin-bottom: 5px; }
+
+        .lema {
+            font-style: italic;
+            font-family: Arial, sans-serif;
+            margin-bottom: 30px;
+        }
+
+        /* Contenedor de fotos */
+        .galeria {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .foto-item {
+            border: 2px solid white;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .foto-item img {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Botones */
+        .boton-pro {
+            display: inline-block;
+            background-color: #f1c40f; /* Dorado/Amarillo */
+            color: black;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin: 20px;
+            transition: 0.3s;
+        }
+
+        .boton-wats {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+
+        .info-tienda {
+            margin-top: 40px;
+            font-family: Arial, sans-serif;
+            background-color: rgba(0,0,0,0.3);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+</head>
+<body>
+
+    <div class="copal-fog"></div>
+
+    <header>
+        <div class="logo">Mictlán</div>
+        <nav>
+            <ul>
+            <a href="productos.html" class="botton-pro">INICIO</a>
+             <a href="CARRITOINDEX.html" class="botton-pro">CARRITO</a>
+             <a href="productos.html" class="botton-pro">VER PRODUCTOS</a>
+
+
+                
+            </ul>
+        </nav>
+    </header>
+
+    <h1>ABARROTES LUPITA</h1>
+    <p class="lema">"Si fío, pierdo; si cobro, molesto. Mejor no fío y todos contentos"</p>
+
+    <div class="galeria">
+        <div class="foto-item">
+            <img src="IMG20260413125544.jpg" alt="Local">
+            <p>Productos</p>
+        </div>
+        <div class="foto-item">
+            <img src="IMG20260413125631.jpg" alt="Local ">
+            <p>Productos</p>
+        </div>
+        <div class="foto-item">
+            <img src="IMG20260413125544.jpg" alt="Local">
+            <p>Productos</p>
+        </div>
+    </div>
+<script>
+        function ajustar(id, cambio) {
+            let span = document.getElementById(id);
+            let valor = parseInt(span.innerText) + cambio;
+            if (valor < 1) valor = 1; // No permite menos de 1
+            span.innerText = valor;
+          
+        }
+
+        function comprar(nombre, id) {
+            let cantidad = document.getElementById(id).innerText;
+            alert("Has agregado " + cantidad + " unidades de " + nombre + " al carrito.");
+        }
+    </script>
+ 
+
+    <div class="info-tienda">
+        <h3>Horarios</h3>
+        <p>Abierto de Lunes a Domingo: 8:00 AM - 10:00 PM</p>
+        <p>Ubicado en el barrio de guadalupe calle 16 de septiembre S/N</p>
+        <p>Manda un mensaje en WhatsApp 9531537847S/N</p>
+        <br>
+ </style>
+</head>
+<body>
+
+</body>
+</html>
+
+
